@@ -1,0 +1,9 @@
+{
+    "name": "fastapi",
+    "dockerFile": "Dockerfile",
+    "appPort": 8080,
+    "postCreateCommand": "uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload",
+    "forwardPorts": [
+        8080
+    ]
+}
